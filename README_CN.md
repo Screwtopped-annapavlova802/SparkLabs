@@ -1,0 +1,236 @@
+# Spark Labs
+
+**AI原生游戏引擎**
+
+![版本](https://img.shields.io/badge/version-1.0.0-blue)
+![C++](https://img.shields.io/badge/C%2B%2B-17-orange)
+![许可证](https://img.shields.io/badge/license-MIT-green)
+
+## 概述
+
+SparkLabs 是一款新一代的AI原生游戏引擎，将人工智能能力深度融入游戏开发的核心架构中。传统游戏引擎依赖手工编码的游戏逻辑和预定义的资源管道，而 SparkLabs 通过AI驱动的程序化内容生成、智能NPC行为系统、自适应渲染和动态难度调整，彻底革新游戏开发范式。
+
+## 核心特性
+
+### AI原生架构
+- AI推理能力深度集成到核心引擎架构
+- AI驱动的对象系统和事件处理机制
+- 神经网络模型支持（ONNX Runtime集成）
+
+### 神经渲染管线
+- 实时AI超分辨率（神经上采样）
+- AI环境光遮蔽（N/AO）
+- 智能抗锯齿（神经AA）
+- 基于场景理解的自适应渲染
+
+### 智能NPC系统
+- 神经网络驱动的NPC决策系统
+- 记忆系统（短时记忆、长时记忆、情景记忆、语义记忆）
+- 注意力机制用于焦点管理
+- 基于PAD模型的情感状态机
+- 上下文感知的对话生成
+
+### 自适应游戏玩法
+- 玩家技能追踪与建模
+- 实时动态难度调整
+- 参与度指标监控
+- 个性化玩家体验优化
+
+### AI叙事引擎
+- 分支叙事的程序化故事生成
+- 动态任务生成
+- 上下文感知的对话和叙事元素
+- 基于玩家偏好的自适应奖励系统
+
+### 智能资源管理
+- AI驱动的纹理合成
+- 程序化几何体生成
+- 提示词转资产系统
+- 智能资源缓存
+
+## 系统要求
+
+### 最低要求
+- **操作系统**: Windows 10, macOS 10.14, Linux (Ubuntu 18.04+)
+- **编译器**: GCC 9+, Clang 10+, MSVC 2019+
+- **内存**: 8 GB
+- **硬盘**: 2 GB 可用空间
+
+### 推荐要求
+- **操作系统**: Windows 11, macOS 12+, Linux (Ubuntu 20.04+)
+- **编译器**: GCC 11+, Clang 14+, MSVC 2022+
+- **内存**: 16 GB 或更多
+- **显卡**: NVIDIA 显卡，支持CUDA（用于GPU加速）
+
+## 安装
+
+### 从源码构建
+
+```bash
+# 克隆仓库
+git clone https://github.com/Yuan-ManX/SparkLabs.git
+cd SparkLabs
+
+# 创建构建目录
+mkdir build && cd build
+
+# CMake配置
+cmake ..
+
+# 编译
+cmake --build . --config Release
+
+# 运行
+./SparkLabs
+```
+
+### CMake选项
+
+- `SPARKLABS_ORT_ENABLED`: 启用ONNX Runtime支持（默认: ON）
+- `SPARKLABS_GPU_SUPPORT`: 启用GPU加速（默认: ON）
+
+```bash
+cmake .. -DSPARKLABS_ORT_ENABLED=ON -DSPARKLABS_GPU_SUPPORT=ON
+```
+
+## 快速开始
+
+```cpp
+#include <SparkLabs.h>
+
+using namespace SparkLabs;
+
+int main() {
+    auto scene = new Scene();
+    scene->SetName("MyGame");
+
+    auto player = scene->CreateEntity("Player");
+    player->SetPosition(Vector3(0.0f, 1.0f, 0.0f));
+    player->SetTag("Player");
+
+    auto npc = scene->CreateEntity("NPC");
+    npc->SetPosition(Vector3(5.0f, 1.0f, 0.0f));
+
+    auto npcBrain = npc->AddComponent<NPCBrainComponent>();
+    npcBrain->LoadModel("models/npc_decision.onnx");
+
+    Engine::GetInstance()->SetScene(scene);
+    Engine::GetInstance()->Run();
+
+    return 0;
+}
+```
+
+## 架构概览
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     SparkLabs Engine                        │
+├─────────────────────────────────────────────────────────────┤
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
+│  │   sparkai   │  │   Neural    │  │      Adaptive       │  │
+│  │    Core     │  │   Renderer  │  │      Gameplay       │  │
+│  └─────────────┘  └─────────────┘  └─────────────────────┘  │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
+│  │    Smart    │  │   Neural    │  │   AI Narrative      │  │
+│  │    Asset    │  │   NPC Brain │  │      Engine         │  │
+│  └─────────────┘  └─────────────┘  └─────────────────────┘  │
+├─────────────────────────────────────────────────────────────┤
+│                    Core Engine Layer                        │
+│  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────────┐    │
+│  │  Scene   │ │ Resource │ │ Physics  │ │  Scripting   │    │
+│  │ Manager  │ │ Manager  │ │  Engine  │ │    System    │    │
+│  └──────────┘ └──────────┘ └──────────┘ └──────────────┘    │
+├─────────────────────────────────────────────────────────────┤
+│                    Platform Layer                           │
+│         Windows | macOS | Linux | Web | Mobile              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## 模块说明
+
+### Core (`core/`)
+引擎核心工具和类型：
+- **Math**: Vector2, Vector3, Vector4, Matrix4x4, Quaternion
+- **Memory**: SmartPtr, WeakPtr 引用计数智能指针
+- **Object**: 基类对象，RTTI系统
+- **String**: UTF-8字符串，带哈希支持
+
+### Engine (`engine/`)
+核心游戏引擎功能：
+- **Scene**: 场景图、GameObject、组件系统
+- **Resource**: 异步资源加载、缓存、热重载
+
+### sparkai (`sparkai/`)
+AI原生模块 - SparkLabs的核心AI组件：
+- **AI Core**: AIBrain、Blackboard、EventBus、NeuralNetwork
+- **Behavior**: 行为树（组合节点、装饰器节点、动作节点）
+- **ONNX**: ONNX Runtime集成
+- **NPC**: 神经NPC大脑、记忆、注意力、情感状态
+- **Gameplay**: 玩家模型、难度控制器、参与度指标
+- **Narrative**: 故事图、任务生成器、对话系统
+- **Asset**: AI资源生成、纹理合成
+- **Render/Neural**: 神经上采样、环境光遮蔽、抗锯齿
+- **Editor**: AI集成编辑器面板
+
+### Render (`render/`)
+渲染系统：
+- **GPU**: GPU资源管理
+- **Shader**: Shader和ShaderProgram管理
+- **Mesh**: 3D网格加载和管理
+- **Material**: 材质系统
+- **Texture**: 纹理加载和管理
+- **Neural**: AI增强渲染效果
+
+### Platform (`platform/`)
+平台抽象：
+- **FileSystem**: 跨平台文件操作
+- **Input**: 键盘、鼠标、手柄输入
+- **Timer**: 高精度计时
+- **Window**: 窗口管理
+
+## 文档
+
+更多文档请参阅 [docs](./docs/) 目录：
+- [API参考](./docs/API_REFERENCE.md)
+- [架构](./docs/ARCHITECTURE.md)
+- [AI系统](./docs/AI_SYSTEM.md)
+- [构建指南](./docs/BUILD_INSTRUCTIONS.md)
+
+## 项目结构
+
+```
+SparkLabs/
+├── core/                 # 核心工具（数学、内存、对象、字符串）
+├── engine/              # 引擎核心（场景、资源）
+├── sparkai/             # AI原生模块
+│   ├── ai/              # AI运行时（行为、大脑、onnx）
+│   ├── npc/            # 智能NPC系统
+│   ├── gameplay/       # 自适应游戏玩法
+│   ├── narrative/      # AI叙事引擎
+│   ├── asset/          # 智能资源管理
+│   ├── render/neural/  # 神经渲染
+│   └── editor/         # AI编辑器工具
+├── render/              # 渲染系统
+├── platform/            # 平台抽象
+├── docs/                # 文档
+├── scripts/             # 构建脚本
+├── tests/               # 单元测试
+└── main.cpp            # 入口点
+```
+
+## 贡献
+
+欢迎贡献！请在提交拉取请求之前阅读我们的贡献指南。
+
+## 许可证
+
+SparkLabs Engine 基于MIT许可证授权。详见 [LICENSE](./LICENSE)。
+
+## 致谢
+
+特别感谢所有贡献者和开源社区，让游戏开发对每个人都可以触及。
+
+---
+
+**SparkLabs Engine** - 用AI原生技术赋能游戏开发者。
