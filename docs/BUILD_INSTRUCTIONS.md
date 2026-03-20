@@ -50,7 +50,7 @@ This document provides comprehensive build instructions for SparkLabs Engine acr
 | CUDA (NVIDIA) | CUDA Toolkit 11.0+ | GPU acceleration |
 | CoreML (Apple) | Built-in | macOS/iOS GPU acceleration |
 
----
+
 
 ## Quick Start
 
