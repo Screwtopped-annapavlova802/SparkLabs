@@ -58,7 +58,7 @@ This document provides comprehensive build instructions for SparkLabs Engine acr
 
 ```bash
 # Clone the repository
-git clone https://github.com/sparklabs-ai/SparkLabs.git
+git clone https://github.com/Yuan-ManX/SparkLabs.git
 cd SparkLabs
 
 # Create build directory
@@ -137,7 +137,7 @@ cmake .. \
 
 2. **Clone and configure:**
 ```powershell
-git clone https://github.com/sparklabs-ai/SparkLabs.git
+git clone https://github.com/Yuan-ManX/SparkLabs.git
 cd SparkLabs
 mkdir build
 cd build
@@ -229,7 +229,7 @@ cmake .. ^
 
 1. **Configure:**
 ```bash
-git clone https://github.com/sparklabs-ai/SparkLabs.git
+git clone https://github.com/Yuan-ManX/SparkLabs.git
 cd SparkLabs
 mkdir build && cd build
 cmake .. -G Xcode
@@ -339,7 +339,7 @@ sudo apt-get install -y \
 
 2. **Configure and build:**
 ```bash
-git clone https://github.com/sparklabs-ai/SparkLabs.git
+git clone https://github.com/Yuan-ManX/SparkLabs.git
 cd SparkLabs
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
@@ -365,7 +365,7 @@ sudo dnf install \
 
 2. **Configure and build:**
 ```bash
-git clone https://github.com/sparklabs-ai/SparkLabs.git
+git clone https://github.com/Yuan-ManX/SparkLabs.git
 cd SparkLabs
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
@@ -390,7 +390,7 @@ sudo pacman -S \
 
 2. **Configure and build:**
 ```bash
-git clone https://github.com/sparklabs-ai/SparkLabs.git
+git clone https://github.com/Yuan-ManX/SparkLabs.git
 cd SparkLabs
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
@@ -631,10 +631,6 @@ sudo apt-get install libgl1-mesa-dev libgl1-mesa-glx
 Could not find Windows SDK
 ```
 
-**Solution:**
-# Install Windows SDK via Visual Studio Installer
-# Or download from https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/
-
 ### Build Performance
 
 #### Use Ninja for Faster Builds
@@ -741,7 +737,7 @@ cpack --config CPackConfig.cmake
 
 ### Minimal Build (Windows)
 ```powershell
-git clone https://github.com/sparklabs-ai/SparkLabs.git
+git clone https://github.com/Yuan-ManX/SparkLabs.git
 cd SparkLabs
 mkdir build
 cd build
@@ -752,7 +748,7 @@ cmake --build . --config Release
 
 ### Minimal Build (macOS)
 ```bash
-git clone https://github.com/sparklabs-ai/SparkLabs.git
+git clone https://github.com/Yuan-ManX/SparkLabs.git
 cd SparkLabs
 mkdir build && cd build
 cmake .. -G Xcode
@@ -762,7 +758,7 @@ cmake --build . --config Release
 
 ### Minimal Build (Linux)
 ```bash
-git clone https://github.com/sparklabs-ai/SparkLabs.git
+git clone https://github.com/Yuan-ManX/SparkLabs.git
 cd SparkLabs
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
