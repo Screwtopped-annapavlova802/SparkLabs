@@ -1,14 +1,25 @@
+<div align="center">
+
+<img src="./assets/SparkLabs-Logo.png" alt="SparkLabs Logo" width="75%"/>
+
+
 # Spark Labs
 
-**AI-Native Game Engine, Ignite Your Infinite Play! 💥🎮**
+### AI-Native Game Engine, Ignite Your Infinite Play! 💥🎮
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![C++](https://img.shields.io/badge/C%2B%2B-17-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+
+### [English](./README.md) | [中文文档](./README_CN.md)
+
+</div>
+
+
 ## Overview
 
-SparkLabs is a next-generation AI-native game engine that deeply integrates artificial intelligence capabilities into the core architecture of game development. Unlike traditional game engines that rely on manually coded game logic and predefined pipelines, SparkLabs revolutionizes game development by enabling procedural content generation, intelligent NPC behavior systems, adaptive rendering, and dynamic difficulty adjustment through AI.
+**SparkLabs** is a next-generation AI-native game engine that deeply integrates artificial intelligence capabilities into the core architecture of game development. Unlike traditional game engines that rely on manually coded game logic and predefined pipelines, SparkLabs revolutionizes game development by enabling procedural content generation, intelligent NPC behavior systems, adaptive rendering, and dynamic difficulty adjustment through AI.
 
 ## Key Features
 
