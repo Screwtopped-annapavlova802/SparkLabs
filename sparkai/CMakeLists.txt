@@ -26,6 +26,8 @@ add_library(sparkai STATIC
     narrative/StoryParser.cpp
     asset/AssetGenerator.cpp
     audio/VoiceSynthesis.cpp
+    storyboard/Storyboard.cpp
+    video/VideoCompositor.cpp
     neural/NeuralAmbientOcclusion.cpp
     neural/NeuralAntiAlias.cpp
     neural/NeuralUpscaleEffect.cpp
