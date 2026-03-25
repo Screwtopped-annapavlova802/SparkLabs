@@ -56,6 +56,10 @@ public:
     ConstIterator Begin() const { return m_Data; }
     Iterator End() { return m_Data + m_Size; }
     ConstIterator End() const { return m_Data + m_Size; }
+    Iterator begin() { return m_Data; }
+    ConstIterator begin() const { return m_Data; }
+    Iterator end() { return m_Data + m_Size; }
+    ConstIterator end() const { return m_Data + m_Size; }
 
 private:
     T* m_Data;
