@@ -1,6 +1,9 @@
 add_library(SparkLabsCore STATIC
     Types.h
     SparkObject.h
+    Variant.h
+    Variant.cpp
+    Map.h
     Threading/Mutex.h
     Threading/Signal.h
     Threading/ThreadID.h
