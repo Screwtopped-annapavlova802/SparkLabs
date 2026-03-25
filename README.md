@@ -364,6 +364,15 @@ SparkLabs Engine is licensed under the MIT License. See [LICENSE](./LICENSE) for
 
 Special thanks to all contributors and the open-source community for making game development accessible to everyone.
 
----
+## ⭐ Star History
 
-**SparkLabs Engine** - Empowering game developers with AI-native technology.
+If you like this project, please ⭐ star the repo. Your support helps us grow!
+
+<p align="center">
+  <a href="https://star-history.com/#Yuan-ManX/SparkLabs&Date">
+    <img src="https://api.star-history.com/svg?repos=Yuan-ManX/SparkLabs&type=Date" />
+  </a>
+</p>
+
+
+**SparkLabs** - Empowering game developers with AI-native technology.
