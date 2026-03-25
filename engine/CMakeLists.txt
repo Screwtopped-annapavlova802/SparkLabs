@@ -1,4 +1,6 @@
 add_library(SparkLabsEngine STATIC
+    Engine.h
+    Engine.cpp
     scene/Node.h
     scene/Node.cpp
     scene/Component.h
