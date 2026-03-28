@@ -49,6 +49,9 @@ public:
     void Reserve(int32 capacity);
     int32 Capacity() const;
 
+    static String FromInt(int32 value);
+    static String FromFloat(float32 value);
+
 private:
     char* m_Data;
     int32 m_Length;
